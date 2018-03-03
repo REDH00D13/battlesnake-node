@@ -51,9 +51,9 @@ app.post('/move', (request, response) => {
  if (x < 1) direction = 'up'
  if (y >= height) direction = 'right'
  */
-const data = JSON.parse(request.body)
-const y = data.you.body.data[0].y;
-const height = data.height;
+const coffee = JSON.parse(request.body)
+const y = coffee.you.body.data[0].y;
+const height = coffee.height;
 
  const direction = 'down'
 if (y > height-1) direction = 'right'
