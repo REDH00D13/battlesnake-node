@@ -39,12 +39,12 @@ app.post('/start', (request, response) => {
 app.post('/move', (request, response) => {
   // NOTE: Do something here to generate your move
 
-//const coffee = request.body
-//const y = coffee.you.body.data[0].y;
-//const height = coffee.height;
+const coffee = request.body
+const y = coffee.you.body.data[0].y;
+const height = coffee.height;
 
  let direction = 'up'
-//if (y === 0) direction = 'right'
+if (y === 0) direction = 'right'
 
 
   // Response data
