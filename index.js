@@ -39,9 +39,21 @@ app.post('/start', (request, response) => {
 app.post('/move', (request, response) => {
   // NOTE: Do something here to generate your move
 
+ console.log('hi', request.body)
+ 
+ /*
+ const x = 0
+ const y = 0
+
+ let direction = 'down'
+
+ if (y < 1) direction = 'right'
+ if (x < 1) direction = 'up'
+ if (y >= height) direction = 'right'
+ */const direction = 'down'
   // Response data
   const data = {
-    move: 'right', // one of: ['up','down','left','right']
+    move: direction, // one of: ['up','down','left','right']
     taunt: 'Outta my way, snake!', // optional, but encouraged!
   }
 
