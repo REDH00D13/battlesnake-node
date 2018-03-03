@@ -56,7 +56,7 @@ const coffee = request.body
 const y = coffee.you.body.data[0].y;
 const height = coffee.height;
 
- const direction = 'up'
+ let direction = 'up'
 if (y === 0) direction = 'right'
 
 
