@@ -54,6 +54,6 @@ app.use('*', fallbackHandler)
 app.use(notFoundHandler)
 app.use(genericErrorHandler)
 
-app.listen(app.get('port'), () => {
+app.listen(app.get('PORT'), () => {
   console.log('Server listening on port %s', app.get('port'))
 })
