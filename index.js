@@ -45,10 +45,11 @@ const y = coffee.you.body.data[0].y;
 const height = coffee.height;
 const width = coffee.width;
  let direction = 'up'
-if (y === 0) direction = 'right'
 if (x ===width-1) direction = 'down'
 if (y ===height-1) direction = 'left'
 if (x ===0) direction = 'up'
+if (y === 0) direction = 'right'
+
   // Response data
   const data = {
     move: direction, // one of: ['up','down','left','right']
