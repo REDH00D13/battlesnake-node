@@ -40,6 +40,7 @@ app.post('/move', (request, response) => {
   // NOTE: Do something here to generate your move
 
 const coffee = request.body
+const x = coffee.you.body.data[0].x;
 const y = coffee.you.body.data[0].y;
 const height = coffee.height;
 const width = coffee.width;
