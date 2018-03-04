@@ -47,7 +47,8 @@ const width = coffee.width;
  let direction = 'up'
 if (y === 0) direction = 'right'
 if (x ===width-1) direction = 'down'
-
+if (x ===0) direction = 'up'
+if (y ===height-1) direction = 'left'
   // Response data
   const data = {
     move: direction, // one of: ['up','down','left','right']
