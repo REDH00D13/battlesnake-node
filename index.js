@@ -42,7 +42,7 @@ app.post('/move', (request, response) => {
 const coffee = request.body
 const y = coffee.you.body.data[0].y;
 const height = coffee.height;
-//sconst width = coffee.width;
+const width = coffee.width;
  let direction = 'up'
 if (y === 0) direction = 'right'
 if (x ===width-1) direction = 'down'
