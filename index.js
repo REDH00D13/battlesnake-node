@@ -47,8 +47,8 @@ const width = coffee.width;
  let direction = 'up'
 if (y === 0) direction = 'right'
 if (x ===width-1) direction = 'down'
-if (x ===0) direction = 'up'
 if (y ===height-1) direction = 'left'
+if (x ===0) direction = 'up'
   // Response data
   const data = {
     move: direction, // one of: ['up','down','left','right']
@@ -56,6 +56,7 @@ if (y ===height-1) direction = 'left'
   }
 
   return response.json(data)
+
 })
 
 // --- SNAKE LOGIC GOES ABOVE THIS LINE ---
